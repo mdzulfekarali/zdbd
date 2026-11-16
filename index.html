@@ -37,7 +37,7 @@ nav{height:76px;display:flex;align-items:center;justify-content:space-between}.b
 <div class="panel" style="margin-top:16px"><h3>About ZDBD</h3><p class="sub">ZDBD (Zoonotic Diseases Research Documents in Bangladesh) is a bibliometric discovery interface designed to organize and explore research documents indexed in Scopus. The database is based on the dataset curated by its administrator. Search results reflect the coverage, search strategy, export date and metadata quality of that dataset; they should not be interpreted as an exhaustive census of all zoonotic disease research in Bangladesh.</p><p class="note">Data source: Scopus export. Please cite the original publications and Scopus as appropriate. ZDBD is an independent research resource and is not affiliated with or endorsed by Elsevier or Scopus.</p></div></section>
 </div><footer class="footer"><div class="wrap"><strong>ZDBD</strong> · Zoonotic Diseases Research Documents in Bangladesh<p class="note" style="color:#c4d8cf">A bibliometric resource for research discovery and One Health knowledge mapping.</p><span class="note" style="color:#c4d8cf">© <span id="yearNow"></span> ZDBD · Curated Scopus document metadata</span></div></footer>
 <script>
-const DATA_URL='data/zdbd_scopus_records.xlsx'; const PAGE_SIZE=10; let records=[],filtered=[],page=1,yearChart,typeChart;
+const DATA_URL='Zoonotic_BD_Duplication_Removed_Excel_Title+Journal.xlsx'; const PAGE_SIZE=10; let records=[],filtered=[],page=1,yearChart,typeChart;
 const $=id=>document.getElementById(id);
 const clean=v=>v==null?'':String(v).trim();
 const uniq=a=>[...new Set(a.map(clean).filter(Boolean))].sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}));
