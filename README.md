@@ -7,13 +7,12 @@ ZDBD is a searchable bibliometric discovery website for research documents relat
 
 ## Add the Scopus Excel dataset
 
-The website expects the workbook at:
+The website currently reads the workbook from the repository root:
 
-`data/zdbd_scopus_records.xlsx`
+`Zoonotic_BD_Duplication_Removed_Excel_Title+Journal.xlsx`
 
-1. In this repository, create a folder named `data`.
-2. Upload your workbook `Zoonotic_BD_Duplication_Removed_Excel_Title+Journal.xlsx` into that folder.
-3. Rename the uploaded file to **`zdbd_scopus_records.xlsx`** (or edit `DATA_URL` near the beginning of the JavaScript in `index.html` to match your filename).
+1. Keep the uploaded workbook in the repository root with the exact filename shown above.
+2. If you later rename or move the workbook, update `DATA_URL` near the beginning of the JavaScript in `index.html` to match its new path.
 4. The first worksheet should contain these column headers:
    - `Title`
    - `Year`
